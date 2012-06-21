@@ -1,0 +1,4 @@
+--- 
+serial_port: /dev/tty.usbmodemfd131
+physical_reset: false
+mcu: atmega328p

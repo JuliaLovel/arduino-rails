@@ -1,0 +1,12 @@
+<div class="row-fluid">
+  <h1>Welcome to the Arduino Controller</h1>
+  <HR/>
+</div>
+<div class="row-fluid">
+  <div class="span12">
+    <%= link_to 'Blink LED', {:controller => :home, :action => :build_sketch, :remote => true}, :class => "btn btn-success btn-large" %>
+  </div>
+</div>
+<div class="row-fluid" style="margin-top:20px;">
+  <%= link_to 'Stop', {:controller => :home, :action => :stop_led, :remote => true}, :class => "btn btn-danger" %>
+</div>
