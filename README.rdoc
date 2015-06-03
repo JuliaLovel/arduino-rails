@@ -11,6 +11,6 @@ To match the port of the serial device on your arduino board (can be found in th
 
 5. Go to http://localhost:3000/ in your browser and you'll see two buttons you can click to turn the LED on and off.
 
-= Notes =
+== Notes
 
 This app uses rake to compile arduino sketches and write them to the arduino in the background based on a trigger in a rails app (i.e., a button click). If you are looking for a tighter, ruby language integration with the arduino, check out the Dino gem.
