@@ -5,7 +5,12 @@
 2. Plug up an Arduino with an ATMega3328P processor, with an LED on pin 13 (and Ground pin), over usb.
 
 3. Change your port name in <tt> config/hardware.yml </tt>
+To match the port of the serial device on your arduino board (can be found in the Arduino software menu Tools>Serial Port)
 
 4. At the command line, run <tt>bundle install</tt> and <tt>rails s </tt>
 
 5. Go to http://localhost:3000/ in your browser and you'll see two buttons you can click to turn the LED on and off.
+
+= Notes =
+
+This app uses rake to compile arduino sketches and write them to the arduino in the background based on a trigger in a rails app (i.e., a button click). If you are looking for a tighter, ruby language integration with the arduino, check out the Dino gem.
